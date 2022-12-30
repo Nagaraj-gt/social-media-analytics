@@ -16,7 +16,7 @@ if ON_COLAB:
     # there are some generic files, maybe externalize?
     required_files = [
                   'settings.py',
-                   'ch03/requirements.txt'
+                   'requirements.txt'
     ]
     print("Downloading required files ...")
     for file in required_files:
@@ -25,7 +25,7 @@ if ON_COLAB:
         os.system(cmd)
 
     print("\nAdditional setup ...")
-    setup_cmds = ['pip install -r ch03/requirements.txt']
+    setup_cmds = ['pip install -r requirements.txt']
 
     for cmd in setup_cmds:
         print('!'+cmd)
